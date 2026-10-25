@@ -1,0 +1,18 @@
+{
+  "name": "CazaAhorro SuperApp",
+  "short_name": "CazaAhorro",
+  "description": "Superapp inteligente con 10 módulos integrados y panel financiero para República Dominicana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#0B0F19",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%2310B981'><rect width='512' height='512' rx='128' fill='%230B0F19'/><path d='M256 96c-88.4 0-160 71.6-160 160 0 49.3 22.3 93.4 57.3 122.7L256 256l102.7 122.7C393.7 349.4 416 305.3 416 256c0-88.4-71.6-160-160-160zm0 64a96 96 0 1 1 0 192 96 96 0 0 1 0-192z' fill='%236366F1'/><circle cx='256' cy='256' r='48' fill='%2310B981'/></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

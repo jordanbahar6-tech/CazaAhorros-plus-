@@ -1,0 +1,646 @@
+PROMPT MAESTRO DEFINITIVO: CAZAAHORRO SUPERAPP — 10 APLICACIONES EN UNA SOLA PLATAFORMA ONLINE
+
+INSTRUCCIÓN PRINCIPAL
+
+Actúa como un equipo senior de producto, diseño UX/UI, desarrollo full-stack, arquitectura de software, inteligencia artificial, ciberseguridad, bases de datos, monetización y despliegue.
+
+Quiero ampliar mi proyecto existente y convertirlo en una superapp inteligente llamada CazaAhorro, que integre diez grandes módulos en una sola plataforma: CazaAhorros, CercaRD, DineroClaro, ProfeIA, TodoKit, EmpleoYa, ViralLab, ÚltimaOferta, DocuFácil y MiBarrio.
+
+Construye una aplicación web progresiva (PWA) moderna, funcional, adaptable a Android, tabletas y escritorio, instalable y preparada para futuras adaptaciones a aplicaciones móviles nativas.
+
+REGLAS FUNDAMENTALES
+
+1. Analiza primero todos los archivos, el código fuente, la arquitectura, las dependencias, la base de datos y las funciones existentes.
+2. No elimines, reemplaces ni dañes funciones que ya funcionan.
+3. Conserva el identificador, la identidad, las configuraciones y los servicios existentes cuando sean compatibles.
+4. Integra los diez módulos dentro de una única aplicación y una experiencia de usuario coherente.
+5. Toda la plataforma debe funcionar exclusivamente online. La conexión a Internet será obligatoria para utilizar sus funciones.
+6. No implementes modo offline, funcionamiento sin conexión, almacenamiento destinado a operar sin Internet ni sincronización diferida.
+7. Utiliza servicios reales cuando estén configurados y disponibles. No simules integraciones, pagos, precios, empleos, negocios ni resultados de IA como si fueran reales.
+8. No expongas claves API, contraseñas, credenciales ni secretos en el frontend.
+9. Implementa primero una base estable y funcional; después, incorpora progresivamente los módulos avanzados.
+10. No afirmes que una función está terminada si no se ha implementado y probado realmente.
+
+Si el proyecto original utiliza una tecnología distinta de la prevista, evalúa la mejor manera de integrarlo sin reescribirlo innecesariamente.
+
+1. IDENTIDAD Y DISEÑO
+
+Crea una identidad visual original para CazaAhorro.
+
+- Colores principales: azul noche, violeta y verde lima.
+- Modos claro y oscuro.
+- Interfaz profesional, moderna, rápida y accesible.
+- Diseño adaptable a móviles Android, tabletas y escritorio.
+- Navegación inferior en móviles cuando resulte apropiada.
+- Pantalla de inicio personalizable.
+- Búsqueda global de herramientas, productos, negocios, empleos y publicaciones.
+- Tarjetas de acceso rápido para los diez módulos.
+- Animaciones ligeras.
+- Estados de carga, error, éxito y ausencia de resultados.
+- Notificaciones configurables.
+- Diseño optimizado para conexiones lentas.
+- Accesibilidad, formularios sencillos y tipografía legible.
+
+La aplicación debe parecer un producto único, no diez páginas independientes pegadas entre sí.
+
+2. AUTENTICACIÓN Y CUENTAS
+
+Implementa o reutiliza un sistema real de autenticación que incluya:
+
+- Registro e inicio de sesión mediante correo electrónico.
+- Verificación del correo.
+- Recuperación de contraseña.
+- Cierre de sesión y gestión segura de sesiones.
+- Inicio de sesión con Google si el proveedor y la configuración lo permiten.
+- Perfil de usuario.
+- Preferencias personales.
+- Configuración de privacidad.
+- Exportación y eliminación de la cuenta.
+- Roles diferenciados para usuarios, comerciantes, empresas y administradores.
+- Protección real de rutas privadas.
+- Autorización de operaciones en el servidor.
+- Restricciones de acceso a los datos de otros usuarios.
+
+Todos los módulos deben compartir una cuenta y un perfil unificados.
+
+3. BASE DE DATOS REMOTA REAL
+
+Integra la base de datos existente o configura una solución remota adecuada, como Firebase, Supabase u otra compatible con el proyecto.
+
+Diseña las tablas o colecciones necesarias para:
+
+- Usuarios y perfiles.
+- Preferencias y permisos.
+- Gastos, ingresos y presupuestos.
+- Metas y misiones de ahorro.
+- Productos, tiendas y precios observados.
+- Ofertas, descuentos y reservas.
+- Negocios y profesionales.
+- Reseñas y solicitudes de cotización.
+- Ofertas laborales y currículums.
+- Publicaciones y comentarios.
+- Documentos y metadatos de archivos.
+- Conversaciones y notificaciones.
+- Historial de cálculos.
+- Uso de IA y límites de consumo.
+- Planes, suscripciones y pagos.
+- Eventos administrativos y registros de errores.
+
+Implementa reglas de acceso por usuario y rol, validación de datos, índices, marcas de tiempo, migraciones y copias de seguridad cuando estén disponibles.
+
+Los datos compartidos entre módulos deben reutilizarse de forma coherente. No dupliques innecesariamente perfiles, cuentas o servicios.
+
+No almacenes contraseñas en texto plano ni información de tarjetas que no debas conservar.
+
+4. MÓDULO CAZAAHORROS — COMPARADOR INTELIGENTE DE PRECIOS
+
+Construye un sistema que permita:
+
+- Comparar precios de supermercados, farmacias, colmados y tiendas.
+- Crear listas de compras inteligentes.
+- Calcular el precio total de una lista en distintos establecimientos.
+- Recomendar productos alternativos más económicos.
+- Comparar precios por unidad, peso o volumen.
+- Detectar cambios de precios.
+- Configurar alertas de descuentos.
+- Consultar historiales de precios disponibles.
+- Escanear códigos de barras.
+- Crear presupuestos de compras.
+- Encontrar oportunidades de ahorro.
+- Mostrar el ahorro potencial de cada decisión.
+
+Permite que los comercios autorizados publiquen sus catálogos y precios. También puedes admitir precios aportados por usuarios, identificándolos claramente y permitiendo reportar errores.
+
+No inventes precios ni afirmes que un precio está actualizado si no se ha verificado su vigencia.
+
+5. MÓDULO CERCARD — NEGOCIOS Y SERVICIOS CERCANOS
+
+Implementa un directorio de servicios locales que incluya:
+
+- Plomeros, electricistas, técnicos y profesionales.
+- Peluquerías, salones y servicios personales.
+- Tiendas, restaurantes y pequeños negocios.
+- Filtros por categoría, ubicación, precio y disponibilidad.
+- Perfiles comerciales con fotografías, horarios y descripción.
+- Solicitudes de cotización.
+- Contacto entre clientes y proveedores.
+- Reseñas de clientes.
+- Perfiles comerciales verificados.
+- Reportes de negocios sospechosos.
+- Panel de administración comercial.
+- Publicaciones destacadas de pago, si la monetización está activada.
+
+Solicita permiso antes de acceder a la ubicación. No reveles direcciones privadas ni afirmes que un negocio está abierto o disponible sin datos fiables.
+
+6. MÓDULO DINEROCLARO — FINANZAS PERSONALES
+
+Desarrolla herramientas para gestionar las finanzas personales y de pequeños negocios:
+
+- Registro de ingresos y gastos.
+- Gestión de deudas y pagos pendientes.
+- Presupuestos diarios, semanales y mensuales.
+- Metas de ahorro.
+- Clasificación automática de gastos.
+- Gráficos e informes.
+- Registro de operaciones mediante texto o voz.
+- Recordatorios de pagos.
+- Análisis de gastos recurrentes.
+- Comparación entre presupuesto y gasto real.
+- Exportación de reportes.
+- Moneda principal: peso dominicano (DOP).
+- Conversión a otras monedas mediante tipos de cambio actualizados y con fecha y fuente.
+
+No conectes cuentas bancarias ni afirmes que has leído transacciones bancarias si no existe una integración autorizada y funcional.
+
+No garantices ganancias de inversiones ni presentes recomendaciones especulativas como resultados seguros.
+
+7. MÓDULO PROFEIA — TUTOR EDUCATIVO CON INTELIGENCIA ARTIFICIAL
+
+Implementa:
+
+- Tutor de matemáticas, ciencias, idiomas y otras materias.
+- Explicaciones paso a paso.
+- Resúmenes de textos.
+- Generación de cuestionarios.
+- Ejercicios interactivos.
+- Tarjetas de memoria.
+- Práctica de inglés y conversación.
+- Preparación para exámenes.
+- Adaptación al nivel educativo del estudiante.
+- Reconocimiento de preguntas mediante imágenes.
+- Ayuda para organizar el estudio.
+- Historial de sesiones educativas.
+- Seguimiento del progreso.
+- Recomendaciones de ejercicios.
+
+Todas las consultas que requieran IA deben enviarse a un servicio remoto mediante un backend seguro.
+
+No simules respuestas de IA cuando el servicio no esté disponible. Protege especialmente los datos de menores y limita la recopilación de información personal.
+
+8. MÓDULO TODOKIT — CAJA DE HERRAMIENTAS DIGITALES
+
+Integra una colección de utilidades online:
+
+- Calculadora básica y científica.
+- Calculadora de porcentajes, descuentos e impuestos.
+- Conversor de unidades.
+- Conversor de monedas con tasas actualizadas.
+- Escáner y generador de códigos QR.
+- Lector de códigos de barras.
+- Notas y listas de tareas guardadas en la cuenta.
+- Temporizador y cronómetro.
+- Calendario de metas de ahorro.
+- Herramientas de texto.
+- Contador de palabras.
+- Corrector de textos mediante servicios disponibles.
+- Generador de contraseñas seguras.
+- Organizador de archivos.
+- Herramientas para estudiantes y profesionales.
+- Exportación de información cuando corresponda.
+
+Las calculadoras pueden realizar operaciones matemáticas en el dispositivo, pero la aplicación solo debe permitir el uso de sus funciones cuando exista conexión activa a Internet.
+
+Las notas, listas y demás datos de cuenta deben guardarse en la base de datos remota. No implementes un modo offline para acceder a las herramientas o modificar los datos.
+
+Solicita únicamente los permisos necesarios.
+
+9. MÓDULO EMPLEOYA — EMPLEO Y DESARROLLO PROFESIONAL
+
+Implementa:
+
+- Publicación y búsqueda de ofertas de empleo.
+- Filtros por ubicación, sector, salario publicado, experiencia y modalidad.
+- Perfiles profesionales.
+- Generador de currículums.
+- Herramientas para preparar entrevistas.
+- Recomendaciones de habilidades y formación.
+- Alertas de nuevas oportunidades.
+- Panel para empresas.
+- Publicación de vacantes de pago cuando corresponda.
+- Sistema para denunciar ofertas sospechosas.
+- Verificación de empresas y empleadores cuando sea posible.
+
+No inventes vacantes, empresas, salarios ni requisitos laborales. Identifica claramente las ofertas verificadas y la fecha de publicación.
+
+10. MÓDULO VIRALLAB — CREACIÓN DE CONTENIDO CON IA
+
+Desarrolla un estudio digital para creadores y negocios:
+
+- Generación de ideas para TikTok, Instagram Reels y YouTube Shorts.
+- Guiones para vídeos.
+- Títulos y descripciones.
+- Subtítulos.
+- Hashtags pertinentes.
+- Calendarios de publicación.
+- Adaptación de contenido a diferentes plataformas.
+- Ideas para anuncios.
+- Planificación de campañas.
+- Asistencia para publicaciones comerciales.
+- Herramientas para creadores y pequeños negocios.
+- Historial de proyectos guardado en la cuenta.
+
+Integra la IA mediante un servicio remoto y seguro. Controla el consumo y los costes. No prometas viralidad, reproducciones ni ingresos garantizados.
+
+Respeta los derechos de autor y las condiciones de las plataformas externas.
+
+11. MÓDULO ÚLTIMAOFERTA — MERCADO DE DESCUENTOS
+
+Crea un mercado de ofertas temporales donde los comercios puedan publicar:
+
+- Productos rebajados.
+- Excedentes de inventario.
+- Ofertas por tiempo limitado.
+- Comida disponible para recogida.
+- Productos de temporada.
+- Mercancía próxima a su fecha de consumo aconsejado, cuando su venta sea legal y segura.
+
+Incluye:
+
+- Precio anterior y precio actual verificables.
+- Descripción del producto.
+- Cantidad disponible.
+- Condiciones de la oferta.
+- Ubicación del establecimiento.
+- Horarios de recogida.
+- Reserva online cuando sea posible.
+- Notificaciones de nuevas ofertas.
+- Herramientas para que los comercios gestionen sus publicaciones.
+- Reportes de descuentos engañosos.
+
+No permitas cuentas regresivas falsas, precios de referencia inventados ni comercialización de productos ilegales o inseguros.
+
+12. MÓDULO DOCUFÁCIL — DOCUMENTOS DIGITALES
+
+Implementa herramientas para:
+
+- Escanear documentos mediante la cámara.
+- Convertir imágenes a PDF.
+- Aplicar reconocimiento óptico de caracteres (OCR).
+- Extraer texto de documentos.
+- Organizar documentos en carpetas remotas.
+- Comprimir archivos cuando sea viable.
+- Crear documentos a partir de plantillas.
+- Gestionar formularios.
+- Exportar archivos.
+- Proteger documentos privados.
+- Compartir archivos mediante permisos y enlaces seguros.
+- Eliminar documentos de forma controlada.
+
+Guarda archivos en un servicio remoto seguro cuando sea necesario y utiliza enlaces temporales para documentos privados.
+
+No afirmes que una firma, documento o certificado tiene validez legal oficial sin la integración y el procedimiento correspondientes.
+
+13. MÓDULO MIBARRIO — COMUNIDAD DIGITAL
+
+Implementa:
+
+- Publicaciones comunitarias por zona.
+- Objetos perdidos y encontrados.
+- Recomendaciones de negocios.
+- Anuncios de eventos.
+- Alertas comunitarias no oficiales.
+- Publicaciones de compraventa permitida.
+- Comentarios y reacciones.
+- Mensajería online cuando esté implementada.
+- Notificaciones.
+- Denuncias de contenido.
+- Moderación contra spam y fraude.
+- Herramientas para administradores.
+- Perfiles de usuario y controles de privacidad.
+
+Todas las publicaciones, conversaciones y notificaciones deben obtenerse de servicios remotos.
+
+No expongas automáticamente la ubicación exacta ni información personal. Incorpora controles de seguridad, bloqueo de usuarios y mecanismos de denuncia.
+
+14. FUNCIONES EXCLUSIVAS DE CAZAAHORRO
+
+Además de los diez módulos, crea las siguientes funciones diferenciadoras:
+
+Radar de gastos invisibles
+
+Analiza los gastos registrados por el usuario y detecta pequeños gastos recurrentes que puedan estar pasando inadvertidos.
+
+Memoria de precios
+
+Mantiene un historial remoto de precios observados, fechas y fuentes, con gráficos de evolución.
+
+Misiones adaptativas de ahorro
+
+Propone retos semanales y mensuales, con insignias, rachas y seguimiento del progreso guardado en la cuenta.
+
+Simulador de decisiones
+
+Permite comparar diferentes decisiones de compra y visualizar el coste acumulado.
+
+Modo Compra Inteligente
+
+Calcula el precio por unidad, el ahorro estimado y el impacto sobre el presupuesto.
+
+Detector de ofertas dudosas
+
+Compara los precios actuales con historiales verificables y advierte cuando una oferta necesita revisión. No acusa de fraude sin pruebas.
+
+Caja Negra del Presupuesto
+
+Muestra cómo cada gasto registrado afecta al saldo, al presupuesto y a las metas de ahorro.
+
+Centro de privacidad
+
+Permite consultar, corregir, exportar y eliminar datos personales.
+
+Compartir retos e informes
+
+Permite compartir voluntariamente informes o retos de ahorro, ocultando por defecto la información financiera sensible.
+
+Todas estas funciones deben utilizar la cuenta y los servicios online de CazaAhorro.
+
+15. ASISTENTE CENTRAL DE INTELIGENCIA ARTIFICIAL
+
+Implementa un asistente conversacional en español que conecte los diez módulos.
+
+Debe poder:
+
+- Comprender solicitudes en lenguaje natural.
+- Identificar el módulo apropiado para cada tarea.
+- Ayudar a organizar compras, estudios, finanzas, documentos y contenido.
+- Analizar los datos que el usuario autorice.
+- Recomendar herramientas relevantes.
+- Generar resúmenes, planes y explicaciones.
+- Justificar las recomendaciones.
+- Solicitar confirmación antes de ejecutar operaciones sensibles.
+- Respetar los permisos del usuario.
+- Informar cuando no existan datos suficientes.
+- Evitar inventar precios, empleos, negocios o estadísticas.
+
+La IA debe conectarse mediante un backend seguro. Utiliza límites de consumo, cuotas por plan, gestión de errores y medidas contra abusos.
+
+Si el servicio de IA no está disponible, muestra un mensaje claro e informa de que la función requiere conexión al servidor. No sustituyas las respuestas reales por respuestas simuladas.
+
+16. FUNCIONAMIENTO EXCLUSIVAMENTE ONLINE
+
+Esta sección sustituye cualquier requisito anterior de funcionamiento offline.
+
+Toda la aplicación debe exigir una conexión activa a Internet para su utilización.
+
+Requisitos obligatorios
+
+- No implementar modo offline.
+- No implementar funcionamiento sin conexión mediante service worker.
+- No utilizar IndexedDB, almacenamiento local o caché para permitir trabajar sin Internet.
+- No guardar cambios pendientes para sincronizarlos posteriormente.
+- No ofrecer una versión offline de notas, gastos, presupuestos, documentos, herramientas o módulos.
+- No permitir utilizar funciones de la aplicación cuando no exista conexión activa.
+- No ofrecer una pantalla de inicio funcional offline.
+- No presentar datos almacenados anteriormente como si estuvieran actualizados.
+- No almacenar datos personales en el dispositivo con el propósito de operar sin conexión.
+
+La PWA puede instalarse, pero todas sus funciones deben requerir Internet.
+
+Gestión de desconexiones
+
+Cuando no haya conexión:
+
+1. Bloquea las funciones de la aplicación.
+2. Muestra una pantalla clara: «Sin conexión a Internet. Conéctate para utilizar CazaAhorro».
+3. Incluye un botón para volver a comprobar la conexión.
+4. No permitas nuevas operaciones ni cambios de datos.
+5. Gestiona correctamente los errores de red.
+6. Al recuperar la conexión, permite al usuario reintentar la operación.
+7. Evita duplicar operaciones, publicaciones o pagos al reintentar.
+8. No informes que una operación fue completada hasta recibir confirmación del servidor.
+
+Utiliza HTTPS para todas las comunicaciones y servicios remotos.
+
+El frontend debe comprobar la conectividad, pero el backend debe seguir siendo la autoridad para validar las operaciones y los permisos.
+
+Las pantallas de error estrictamente necesarias para informar de la falta de conexión no deben permitir acceder a funcionalidades offline.
+
+17. PLAN GRATUITO Y PREMIUM
+
+Implementa una estructura de monetización transparente.
+
+Plan gratuito
+
+- Acceso a una selección útil de herramientas.
+- Presupuesto básico.
+- Gestión de gastos.
+- Listas de compras.
+- Acceso limitado a las funciones de IA.
+- Acceso a módulos comunitarios y ofertas conforme a sus límites.
+- Publicidad no invasiva si se implementa.
+
+Plan Premium
+
+- Historial ampliado.
+- Informes y exportaciones avanzadas.
+- Más consultas de IA con cuotas explícitas.
+- Presupuestos y metas avanzados.
+- Estadísticas detalladas.
+- Funciones adicionales de organización.
+- Experiencia sin anuncios si se utiliza publicidad en el plan gratuito.
+- Herramientas avanzadas para usuarios y profesionales según el plan.
+
+Permite configurar precios y límites desde el backend.
+
+Comprueba los permisos Premium en el servidor. No permitas que modificar una variable del navegador desbloquee funciones de pago.
+
+Explica los precios, las renovaciones, las condiciones y las cancelaciones.
+
+No actives planes de pago hasta que exista una integración real y verificada.
+
+18. PASARELA DE PAGO
+
+Prepara una integración con un proveedor de pagos compatible con República Dominicana y con la cuenta comercial del propietario.
+
+Incluye, según las capacidades del proveedor:
+
+- Pagos únicos.
+- Suscripciones recurrentes.
+- Página de pago segura alojada por el proveedor.
+- Verificación de pagos en el servidor.
+- Webhooks firmados.
+- Estados pendiente, confirmado, fallido, cancelado y reembolsado.
+- Renovaciones y vencimientos.
+- Cancelación de suscripciones.
+- Historial de facturación.
+- Gestión de errores.
+- Prevención de pagos duplicados.
+- Registro de eventos de pago.
+
+No almacenes números completos de tarjetas ni códigos de seguridad.
+
+No actives Premium por una simple redirección del navegador. Actívalo solamente después de verificar el pago en el servidor.
+
+No simules transacciones reales. Si faltan credenciales, configura la estructura necesaria y documenta cómo completar la integración.
+
+19. PANEL DE ADMINISTRACIÓN
+
+Crea un panel administrativo protegido y separado de las cuentas normales.
+
+Debe incluir:
+
+- Estadísticas de uso y retención.
+- Gestión de usuarios y roles.
+- Gestión de reportes y denuncias.
+- Gestión de comercios y empresas.
+- Moderación de publicaciones.
+- Gestión de planes Premium.
+- Configuración de cuotas de IA.
+- Seguimiento de costes de IA.
+- Registro de errores.
+- Eventos de pago y suscripciones.
+- Herramientas de soporte.
+- Indicadores de actividad de los módulos.
+- Configuración de anuncios y publicaciones destacadas.
+
+Protege las operaciones administrativas mediante permisos de servidor. No expongas información financiera personal innecesaria.
+
+20. PÁGINA WEB, PWA Y DOMINIO PERSONALIZADO
+
+Publica una versión web accesible mediante HTTPS.
+
+Incluye:
+
+- Página pública de inicio.
+- Presentación de los diez módulos.
+- Página de características.
+- Página de precios.
+- Preguntas frecuentes.
+- Política de privacidad.
+- Términos y condiciones.
+- Página de contacto.
+- Registro e inicio de sesión.
+- Panel privado.
+- Página de instalación de la PWA.
+- Metadatos para buscadores.
+- Enlaces compartibles.
+- Preparación para conectar un dominio personalizado mediante DNS.
+
+No inventes un dominio registrado ni afirmes que se ha publicado el sitio si todavía no se ha desplegado.
+
+La PWA debe ser instalable cuando el navegador y el entorno de alojamiento lo permitan, pero su funcionamiento será exclusivamente online.
+
+21. SEGURIDAD Y PRIVACIDAD
+
+Implementa:
+
+- Validación en el cliente y en el servidor.
+- Permisos de base de datos por usuario y rol.
+- Protección de claves API y secretos.
+- Límites de solicitudes y de gasto.
+- Protección frente a abuso de autenticación.
+- Gestión segura de sesiones.
+- Validación de archivos subidos.
+- Control de acceso a documentos.
+- Protección frente a accesos no autorizados.
+- Registro de errores sin contraseñas ni datos sensibles innecesarios.
+- Exportación y eliminación de datos.
+- Consentimiento informado.
+- Políticas de privacidad.
+- Copias de seguridad cuando estén disponibles.
+- Protección de menores.
+- Controles contra spam, fraude y suplantación.
+
+No confíes exclusivamente en la validación del frontend.
+
+22. ARQUITECTURA Y DESARROLLO POR FASES
+
+Antes de modificar el código:
+
+1. Inspecciona todos los archivos del proyecto.
+2. Identifica el framework, el lenguaje y las dependencias.
+3. Comprueba la autenticación y la base de datos existentes.
+4. Identifica los módulos y las funciones que ya funcionan.
+5. Detecta errores, dependencias incompatibles y configuraciones pendientes.
+6. Diseña un plan de integración.
+7. Conserva los componentes que puedan reutilizarse.
+8. Evita duplicar servicios y datos.
+9. Divide el código en módulos mantenibles.
+10. Implementa cambios progresivos y verificables.
+
+Después, trabaja en este orden:
+
+Fase 1: estructura central, autenticación, base de datos remota, navegación y diseño.
+
+Fase 2: CazaAhorros, DineroClaro y TodoKit.
+
+Fase 3: CercaRD, ÚltimaOferta y MiBarrio.
+
+Fase 4: ProfeIA, ViralLab y DocuFácil.
+
+Fase 5: EmpleoYa, asistente central de IA y funciones diferenciadoras.
+
+Fase 6: Premium, pasarela de pago, panel administrativo y dominio personalizado.
+
+Fase 7: pruebas de seguridad, rendimiento, conexión y publicación.
+
+Si el proyecto original ya contiene alguno de estos módulos, audítalo y amplíalo en lugar de reconstruirlo innecesariamente.
+
+No cambies identificadores de aplicación, configuraciones de Firebase, archivos de compilación ni dependencias críticas sin comprobar las consecuencias.
+
+23. PRUEBAS Y CONTROL DE CALIDAD
+
+Realiza pruebas reales para comprobar:
+
+- Que la aplicación arranca correctamente.
+- Que la navegación funciona.
+- Que la autenticación funciona.
+- Que cada usuario solo puede acceder a sus propios datos.
+- Que los diez módulos se conectan correctamente a los servicios.
+- Que los datos se guardan y recuperan desde la base de datos remota.
+- Que los cálculos financieros son correctos.
+- Que los precios tienen fuentes y fechas cuando corresponda.
+- Que los servicios de IA gestionan correctamente los errores.
+- Que los permisos Premium se verifican en el servidor.
+- Que los pagos no se duplican.
+- Que los webhooks se verifican correctamente.
+- Que los archivos privados no son accesibles sin autorización.
+- Que las funciones requieren conexión activa.
+- Que las desconexiones bloquean las operaciones.
+- Que no se guardan operaciones pendientes para ejecutarlas más tarde.
+- Que no hay claves secretas en el frontend.
+- Que no hay botones sin funcionalidad.
+- Que no se muestran datos ficticios como si fueran reales.
+- Que las funciones existentes del proyecto original siguen funcionando.
+- Que la aplicación puede desplegarse en el entorno previsto.
+
+Distingue entre pruebas ejecutadas, pruebas pendientes e integraciones que todavía necesitan credenciales.
+
+24. ENTREGA FINAL
+
+Entrega el proyecto ampliado con:
+
+- Código fuente completo.
+- Diez módulos integrados.
+- Autenticación funcional.
+- Base de datos remota.
+- Asistente central de IA.
+- Herramientas de ahorro y utilidades.
+- Funciones Premium.
+- Estructura de pagos.
+- Panel administrativo.
+- Interfaz web adaptable.
+- PWA instalable y exclusivamente online.
+- Configuración de servicios externos.
+- Variables de entorno de ejemplo sin secretos reales.
+- Instrucciones para ejecutar el proyecto.
+- Instrucciones para generar APK o AAB si la tecnología lo permite.
+- Guía para publicar la versión web.
+- Guía para conectar un dominio.
+- Informe de funciones implementadas y pendientes.
+- Resultados de las pruebas realizadas.
+- Estimación de costes recurrentes de alojamiento, base de datos, IA y pagos.
+
+Si el entorno permite crear archivos, prepara un paquete descargable con el proyecto completo. Si no puedes crear un archivo directamente, entrega los archivos necesarios con sus rutas y contenido completo.
+
+No afirmes que has generado un APK, desplegado una web, conectado un dominio o activado pagos si no has realizado esas operaciones.
+
+INSTRUCCIÓN FINAL
+
+Construye una superapp estable, segura, moderna y funcional que unifique las diez aplicaciones en CazaAhorro.
+
+Prioriza la experiencia de usuario, la calidad del código, la seguridad, la utilidad real y el control de costes.
+
+Toda la plataforma debe funcionar exclusivamente online. No implementes modo offline bajo ninguna circunstancia.
+
+Primero analiza el proyecto original, presenta un plan de integración y después realiza los cambios por etapas. Conserva todo lo que ya funciona y documenta claramente cualquier función que necesite configuración externa, credenciales o trabajo adicional.

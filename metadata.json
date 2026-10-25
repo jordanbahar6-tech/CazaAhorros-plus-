@@ -1,0 +1,6 @@
+{
+  "name": "CazaAhorro SuperApp",
+  "description": "Superapp inteligente con 10 módulos integrados y panel de ganancias y retiros para administradores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
